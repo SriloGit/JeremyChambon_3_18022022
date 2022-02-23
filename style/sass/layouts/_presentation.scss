@@ -1,0 +1,14 @@
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lighten($colour-grey,45%);
+    padding: 10px 45px 50px 45px;
+    text-align: center;
+    h2{
+        font-weight: normal ;
+    }
+    h2,h1{
+        margin: 10px ;
+    }
+}

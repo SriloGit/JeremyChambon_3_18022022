@@ -1,0 +1,9 @@
+.search-location{
+    display: flex;
+    background-color: lighten($colour-grey,40%);
+    justify-content: center;
+    align-items: center;
+    p{
+        padding-left: 13px;
+    }
+}

@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+   }
+.nom-restaurant h1,.footer_logo p{
+    font-family: 'Shrikhand', cursive;
+}
+h3{
+    font-size: 20px;
+    margin-left: 5%;
+    padding-top: 45px;
+    margin-bottom: 25px;
+}

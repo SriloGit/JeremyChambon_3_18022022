@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: darken($colour-grey,40%);
+    color:white;
+    padding-left: 5%;
+    padding-bottom: 15px;
+    font-weight: 600;
+    &_logo{
+        padding-bottom: 7px;
+    }
+    a{
+        padding-bottom: 7px;
+        color:white;
+    }
+}

@@ -1,0 +1,40 @@
+.opacity {
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    font-weight: 800 ;
+    color: white;
+    margin-top: 20px;
+  
+      .btn {
+        border-radius: $border-radius;
+        background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+        padding: 0px 15px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        &:hover {
+          border-radius: $border-radius;
+            &::after {
+              border-radius: $border-radius;
+                opacity: 1;
+            }
+        }
+        &::after {
+          border-radius: $border-radius;
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to bottom right, lighten($colour-secondary, 5), lighten($colour-primary, 5));
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+        }
+        p{
+            margin: 12px;
+        }
+    }
+    }
