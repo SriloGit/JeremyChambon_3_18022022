@@ -501,9 +501,6 @@ header i {
   margin: 20px;
   border-radius: 20px;
   padding-left: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .menu__container strong {
@@ -520,6 +517,8 @@ header i {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   padding: 5px;
   line-height: 23px;
 }
