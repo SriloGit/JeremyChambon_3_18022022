@@ -9,6 +9,9 @@
         width: 80%;
         margin: 5px 0px;
         border-radius: $border-radius;
+        &:hover{
+            background-color: lighten($colour-secondary,20%);
+        }
         &__number{
             position: relative;
             left: -7px;

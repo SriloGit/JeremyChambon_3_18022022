@@ -11,12 +11,14 @@
         background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
         padding: 0px 15px;
         position: relative;
+        box-shadow: 1px 1px 15px 1px $colour-grey;
         z-index: 1;
         cursor: pointer;
         &:hover {
           border-radius: $border-radius;
             &::after {
               border-radius: $border-radius;
+              box-shadow: 2px 2px 15px 2px $colour-grey;
                 opacity: 1;
             }
         }
