@@ -250,6 +250,9 @@ h3 {
 
 .header_logo {
   text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .header_logo img {
@@ -270,6 +273,10 @@ header {
 header i {
   font-size: 20px;
   color: #333333;
+}
+
+.header_index {
+  display: block;
 }
 
 .search-location {
@@ -366,6 +373,7 @@ header i {
 
 .restaurants {
   background-color: #f3f3f3;
+  padding-bottom: 20px;
 }
 
 .restaurants-card {
@@ -494,9 +502,6 @@ header i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   background-color: white;
   margin: 20px;
   border-radius: 20px;
@@ -504,8 +509,21 @@ header i {
 }
 
 .menu__container strong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding-right: 10px;
   padding-bottom: 7px;
+}
+
+.menu__container p {
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__container--column {
@@ -517,14 +535,9 @@ header i {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   padding: 5px;
   line-height: 23px;
-}
-
-.menu__container--column p {
-  margin: 0px;
+  overflow: hidden;
 }
 
 .menu__container h3 {
@@ -546,8 +559,14 @@ header i {
   background-color: #99E2D0;
   color: white;
   border-radius: 0px 20px 20px 0px;
-  height: 56px;
-  width: 56px;
+  width: 0px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
+  -webkit-transform-origin: right 50%;
+          transform-origin: right 50%;
+  overflow: hidden;
 }
 
 .entrees {
@@ -587,6 +606,21 @@ header i {
   padding-top: 20px;
 }
 
+.menu__container:hover {
+  cursor: pointer;
+}
+
+.menu__container:hover .menu__selected {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  width: 56px;
+}
+
+.menu__container:hover i {
+  -webkit-animation: load3 0.5s both;
+          animation: load3 0.5s both;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,8 +640,16 @@ header i {
   padding-bottom: 7px;
 }
 
-.footer a {
+.footer_lien {
   padding-bottom: 7px;
+}
+
+.footer_lien a {
   color: white;
+}
+
+.footer_lien i {
+  padding-right: 15px;
+  width: 25px;
 }
 /*# sourceMappingURL=main.css.map */

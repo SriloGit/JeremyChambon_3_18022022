@@ -1,5 +1,6 @@
 .restaurants{
     background-color: lighten($colour-grey,45%);
+    padding-bottom: 20px;
     &-card{
         display: flex;
         flex-direction: column;
