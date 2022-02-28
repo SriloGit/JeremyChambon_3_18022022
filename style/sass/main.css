@@ -617,8 +617,8 @@ header i {
 }
 
 .menu__container:hover i {
-  -webkit-animation: load3 0.5s both;
-          animation: load3 0.5s both;
+  -webkit-animation: load3 1s both;
+          animation: load3 1s both;
 }
 
 .footer {
