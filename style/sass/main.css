@@ -112,6 +112,7 @@ h3 {
 .loader {
   font-size: 10px;
   margin: 50px auto;
+  margin-top: 350px;
   text-indent: -9999em;
   width: 11em;
   height: 11em;
@@ -249,14 +250,14 @@ h3 {
 }
 
 .header_logo {
-  text-align: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding-left: 20%;
 }
 
 .header_logo img {
-  width: 40%;
+  width: 60%;
   padding-top: 17px;
   padding-bottom: 10px;
 }
@@ -270,6 +271,10 @@ header {
           align-items: center;
 }
 
+header nav {
+  padding-left: 20px;
+}
+
 header i {
   font-size: 20px;
   color: #333333;
@@ -277,6 +282,19 @@ header i {
 
 .header_index {
   display: block;
+  text-align: center;
+}
+
+.header_index_logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header_index_logo img {
+  width: 40%;
+  padding-top: 17px;
+  padding-bottom: 10px;
 }
 
 .search-location {
@@ -293,7 +311,35 @@ header i {
 }
 
 .search-location p {
-  padding-left: 13px;
+  padding-left: 17px;
+  width: 155px;
+}
+
+.search-location p input {
+  border: 0px;
+  background-color: #e6e6e6;
+  font-weight: bold;
+  width: 100%;
+}
+
+.search-location p input::-webkit-input-placeholder {
+  color: black;
+}
+
+.search-location p input:-ms-input-placeholder {
+  color: black;
+}
+
+.search-location p input::-ms-input-placeholder {
+  color: black;
+}
+
+.search-location p input::placeholder {
+  color: black;
+}
+
+.search-location p input:focus {
+  outline: none;
 }
 
 .presentation {
@@ -341,7 +387,7 @@ header i {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f3f3f3;
-  width: 80%;
+  width: 90%;
   margin: 5px 0px;
   border-radius: 20px;
 }
@@ -471,7 +517,7 @@ header i {
 
 .menu {
   border-radius: 20px 20px 0px 0px;
-  background-color: #e6e6e6;
+  background-color: #f3f3f3;
   position: relative;
   margin-top: -20px;
 }
