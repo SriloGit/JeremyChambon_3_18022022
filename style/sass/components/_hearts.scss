@@ -8,40 +8,13 @@
         position: absolute;
         cursor: pointer;
         font-size: 25px;
-        transition: all 0.2s ease-in-out;
-        /*&:hover {
-            &::after {
-                opacity: 1;
-            }
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(to bottom right, lighten($colour-secondary, 5), lighten($colour-primary, 5));
-            opacity: 0;
-            z-index: -1;
-            transition: opacity 250ms;
-        }*/        
+        transition: all 0.2s ease-in-out;   
     }
     
     
     .far{
-        /*animation-name: fadeout;
-        animation-duration: 0.2s;*/
         opacity: 1;
     }
-/*@keyframes fadeout{
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}*/
     .fas{ 
         opacity: 0;
     }

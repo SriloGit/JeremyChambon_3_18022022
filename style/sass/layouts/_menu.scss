@@ -3,15 +3,6 @@
     height: 180px;
     object-fit: cover;
 }
-@keyframes loadmenu {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
 .menu{
     border-radius: 20px 20px 0px 0px;
     background-color: lighten($colour-grey, 45%);
@@ -47,7 +38,12 @@
             padding-bottom: 7px;
         }        
         p{
-            margin: 0px;                
+            margin: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        h3{            
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -80,6 +76,25 @@
         overflow: hidden;
     }
 }
+.menu__container:hover{    
+    cursor: pointer;
+    .menu__selected{
+        transform: scaleX(1);
+        width: 56px;
+    }
+    i{
+        animation: load3 1s both;
+    }
+}
+@keyframes loadmenu {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .entrees{
     animation: loadmenu 1.0s;
 }
@@ -102,15 +117,4 @@
 .order{
     padding-bottom: 40px;
     padding-top: 20px;
-}
-
-.menu__container:hover{    
-    cursor: pointer;
-    .menu__selected{
-        transform: scaleX(1);
-        width: 56px;
-    }
-    i{
-        animation: load3 1s both;
-    }
 }
